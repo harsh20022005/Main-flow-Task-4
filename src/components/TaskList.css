@@ -1,0 +1,129 @@
+.task-list {
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+  }
+  
+  .task-list:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .task-list.dark-mode {
+    background: #444;
+    color: #fff;
+  }
+  
+  .task-input input,
+  .task-input select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+  }
+  
+  .task-input input:focus,
+  .task-input select:focus {
+    border-color: #333;
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .filters button {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .filters button:hover {
+    background-color: #555;
+  }
+  
+  .filters button.dark-mode {
+    background-color: #888;
+  }
+  
+  .search input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+  }
+  
+  .search input:focus {
+    border-color: #333;
+  }
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s, transform 0.3s;
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  .task.completed span {
+    text-decoration: line-through;
+    color: #999;
+    transition: color 0.3s;
+  }
+  
+  .task button {
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 5px;
+    transition: color 0.3s, transform 0.3s;
+  }
+  
+  .task button:hover {
+    color: #555;
+    transform: scale(1.2);
+  }
+  
+  .task:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.02);
+  }
+  
+  .task-details {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+  }
+  
+  .task-details.dark-mode {
+    background: #444;
+    color: #fff;
+  }
+  
